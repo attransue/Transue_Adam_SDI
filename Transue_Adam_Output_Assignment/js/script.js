@@ -13,5 +13,8 @@ var havePreviousProgramingExperiance = true;   // boolean variable
 
 
 //outputs will reside here
-console.log("I have a total of " + numberOfKids "kids");
+console.log("I have a total of " + numberOfKids "kids.");
+console.log("My beautiful daughters name is " + daughtersName ".");
+console.log("I am currently employed by the " + placeOfEmployment ".");
+console.log("Do I have any previous programming experiance" + havePreviousProgramingExperiance);
 
