@@ -5,10 +5,10 @@
  **/
 
 //Variables will go here
-var numberOfKids = "1";
-var daughtersName = "Drew";
-var placeOfEmployment = "Monroe County 911 center";
-var havePreviousProgramingExperiance = true;
+var numberOfKids = "1";  //Number of variable
+var daughtersName = "Drew";  // String variable
+var placeOfEmployment = "Monroe County 911 center";  // string variable
+var havePreviousProgramingExperiance = true;   // boolean variable
 
 
 
