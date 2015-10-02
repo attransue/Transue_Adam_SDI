@@ -9,7 +9,7 @@ var numberOfKids = 1;  //Number of variable
 var daughtersName = "Drew";  // String variable
 var placeOfEmployment = "Monroe County 911 center";  // string variable
 var havePreviousProgramingExperiance = true;   // boolean variable
-var dutysOfEmployment = "I work as a 911 dispatcher and call taker, answering the phone and dispatching the necessary authority\'s";
+var dutysOfEmployment = "I work as a 911 dispatcher and call taker, answering the phone and dispatching the necessary authority\'s";   //String variable
 
 
 //outputs will reside here
