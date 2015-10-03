@@ -26,8 +26,11 @@ var frictionLoss; // Variable for the final results of the calculations.
 
 // User inputs will happen here.
 lengthOfHose = prompt("Please Enter the Total Length of the Hose Being Used.");  // Assigns the input value to lengthOfHose
+console.log("Length of Hose = " + lengthOfHose + " feet.");  // Prints the length of hose input
 gallonsPerMinute = prompt("Please Enter the Amount of Water Being Used in Gallons Per Minute.");  // Assigns Value to gallonsPerMinute
+console.log("Total Gallons Per Minute = " + gallonsPerMinute); // Prints the gallons per minute
 diameterCoefficient = prompt("Using the Following Table Please Enter The Coefficient That represents the Diameter of hose being used. \n.75 inches = 1100 \n1.0 inches = 150 \n1.25 inches = 80 \n1.5 inches = 24 \n1.75 inches = 15.5 \n2.0 inches = 8 \n2.5 inches = 2 \n3.0 inches = 0.677 \n3.5 inches = 0.34 \n4.0 inches = 0.2 \n4.5 inches = 0.1 \n5.0 inches = 0.08 \n6.0 inches = 0.05"); // Assigns value to diameterCoefficient
+console.log("The coefficient for the diameter of hose is " + diameterCoefficient);  // prints out the coefficient that is used
 
 
 //Variables will be assigned to the array here
