@@ -21,6 +21,7 @@ var lengthOfHose;  // Empty variable that will be assigned the user input value 
 var gallonsPerMinute;  // Empty variable that will be assigned the user input value for the GPM of water that is being flowed
 var diameterCoefficient;  // Empty variable that will be assigned the user input value for the Diameter of the Hose being Used
 var calculationsTable = []; // An array to be used to store the values of the user input
+var frictionLoss; // Variable for the final results of the calculations.
 
 
 // User inputs will happen here.
@@ -36,6 +37,9 @@ calculationsTable[2] = diameterCoefficient;  // assignment of the diameter of ho
 
 
 //Math type stuff will happen here.
+
+frictionLoss = calculationsTable[2] * ((calculationsTable[1] / 100) * (calculationsTable[1] / 100)) * (calculationsTable[0] / 100); // The forumla for friction loss is the coeffient for the diameter of hose * (gpm/100)^2 * the length of the house /100
+
 
 
 
