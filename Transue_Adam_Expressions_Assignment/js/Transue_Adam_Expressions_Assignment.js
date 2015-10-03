@@ -44,5 +44,7 @@ frictionLoss = calculationsTable[2] * ((calculationsTable[1] / 100) * (calculati
 
 
 // Outputs will happen here.
+alert("Your friction loss for the given inputs is " + frictionLoss + " psi."); // prints the total friction loss from the given inputs
+alert("Please note that the larger the hose that is used the less friction loss that occurs."); // just a friendly reminder to the user about how friction loss works.
 
 
