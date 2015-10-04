@@ -51,3 +51,11 @@ alert("Your friction loss for the given inputs is " + frictionLoss + " psi."); /
 alert("Please note that the larger the hose that is used the less friction loss that occurs."); // just a friendly reminder to the user about how friction loss works.
 
 
+/**
+ Values tested
+ length of hose|       | 100  | 250  | 1500 | 650
+ gallons per minute    | 200  | 400  | 1200 | 975
+ Diameter Coefficient  | 15.5 | 0.08 | 0.05 | 8.0
+ Friction Loss         | 93   | 3.2  | 108  | 4943.25
+
+ **/
