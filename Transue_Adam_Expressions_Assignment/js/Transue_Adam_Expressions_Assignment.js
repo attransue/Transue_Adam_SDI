@@ -41,7 +41,7 @@ calculationsTable[2] = diameterCoefficient;  // assignment of the diameter of ho
 
 //Math type stuff will happen here.
 
-frictionLoss = calculationsTable[2] * ((calculationsTable[1] / 100) * (calculationsTable[1] / 100)) * (calculationsTable[0] / 100); // The forumla for friction loss is the coeffient for the diameter of hose * (gpm/100)^2 * the length of the house /100
+frictionLoss = calculationsTable[2] * ((calculationsTable[1] / 100) * (calculationsTable[1] / 100)) * (calculationsTable[0] / 100); // The formula for friction loss is the coefficient for the diameter of hose * (gpm/100)^2 * the length of the house /100
 
 
 
