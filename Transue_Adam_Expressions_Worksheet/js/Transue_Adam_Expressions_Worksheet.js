@@ -1,4 +1,8 @@
-
+/**
+ Adam Transue
+ SDI 1510
+ Expressions WorkSheet
+ **/
 // Dog years problem
 var ageInHumanYears;  // Creates the empty variable to be used to receive the age in human years
 const humanToDogYears = 7; // The constant that will be used to calculate the total
