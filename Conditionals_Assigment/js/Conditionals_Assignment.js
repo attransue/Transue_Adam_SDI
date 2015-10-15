@@ -15,7 +15,8 @@ var carNote;  // sets a variable for how much the car payment is
 var carIns; // sets a variable for how much the car insurance costs
 var grossIncome; // sets a variable that totals the amount of gross income
 var payCheck; // sets a variable that receives the pay check total
-var billsCanBePaid; // boolean variable for weather or not monthly bills can be paid
+var billsAmount; // sets a variable for total of all bills
+var billsCanBePaid = false;// boolean variable for weather or not monthly bills can be paid
 
 // user input
 
@@ -78,18 +79,44 @@ carIns = Number(carIns);//cast user input into a number
 
 
 grossIncome = weeklyHours * payRate;// calculates the gross income amount based off of the input values
+billsAmount = phoneBill + carIns + carNote; // totals all the bills together
+
+
 
 if(freqOfPay === 1){ // checks to see if the freqOfPay variable is = 1
     payCheck = grossIncome; // setts the payCheck variable = grossIncome
 } else if(freqOfPay === 2){ // checks to see if the freqOfPay variable is = 2
-    payCheck = grossIncome * 2; // sets the paycheck variable = grossIncome * 2
+    payCheck = (grossIncome * 2); // sets the paycheck variable = grossIncome * 2
 } else if(freqOfPay === 4){ // checks to see if the freqOfPay variable is = 4
-    payCheck = grossIncome * 4; // sets the paycheck variable = grossIncome * 4
+    payCheck = (grossIncome * 4); // sets the paycheck variable = grossIncome * 4
 }
 
-if((carIns + carNote + phoneBill) <= grossIncome){ //checks the totals of bills against grossIncome
-    billsCanBePaid = true; // sets the value of billsCanBePaid to true
-} else{ // if the if statement validates false
-    billsCanBePaid = false; // sets the value of billsCanBePaid to false
+billsCanBePaid = confirm("Your monthly income is $" + payCheck + " Your monthly bills total $" + billsAmount + " Is your monthly income more then your bills amount?  ('OK' for Yes 'Cancel' for No");
+console.log("bills value = " + billsCanBePaid);
+
+
+// outputs in here
+
+
+
+if(billsCanBePaid === true && (freqOfPay ===2 || freqOfPay === 4)){
+    console.log("Based of the monthly income you will be able to pay all of your bills totaling $" + (billsAmount));
+    console.log("You will only need to set aside $" + billsAmount / freqOfPay + " out of each paycheck to be able to succsesfully pay your bills");
+} else{
+
+    if (billsCanBePaid >= carIns + carNote) {
+        console.log("You can pay your car loan and your car insurance totaling $" + (carIns + carNote));
+    } else if (billsCanBePaid >= carNote + phoneBill) {
+        console.log("You can pay your car payment and your phone bill totaling $" + carNote + phoneBill);
+    } else if (billsCanBePaid >= carIns + phoneBill) {
+        console.log("You can pay your car insurance and your phone bill totaling $" + carIns + phoneBill);
+    } else if (billsCanBePaid >= carIns && carNote && phoneBill) {
+        console.log("You can pay either your phone bill, your car loan, or your car insurance. So please choose wisely!");
+    } else if (billsCanBePaid >= carIns && carNote) {
+        console.log("You can pay either your car loan, or your car insurance. So please choose wisely!");
+    } else if (billsCanBePaid >= carIns && phoneBill) {
+        console.log("You can pay either your phone bill or your car insurance. So please choose wisely!");
+    } else if (billsCanBePaid >= carNote && phoneBill) {
+        console.log("You can pay either your phone bill or your car loan. So please choose wisely!");
+    }
 }
-//if billsCanBePaid = false && billsCanBePaid <=
