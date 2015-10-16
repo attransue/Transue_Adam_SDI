@@ -99,3 +99,14 @@ if(billsCanBePaid === true && (freqOfPay ===2 || freqOfPay === 4)){ // checks to
     }
 }
 (billsCanBePaid === true) ? console.log("You are working a sufficient job to pay your bills.") : console.log("You need to find another job to be able to pay your bills!");// checks to see if billsCanBePaid is true if so prints out the job is good if not prints out to find a new job.
+
+
+/**
+ inputs
+
+ pay rate |   10  | 16.50  |
+ hours    |   40  |    40  |
+ freqOfpay|    2  |     2  |
+ phone    |   300 |   200  |
+ carNote  |   300 |   170  |
+ carIns   |   300 |   190  |
