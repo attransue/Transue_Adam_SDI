@@ -6,6 +6,7 @@
 
 const pi = 3.14; // constant to be used for the calculation of circles
 var radius  = prompt("Please enter the radius for your circle");
+radius = Number(radius); // cast radius to a number
 function calcCirCircumference(){ // creates a function that takes one argument (radius)
      var circumference = 2 * pi *radius; // does the math for the circumference of a circle
     return circumference; // returns the value of the math above
@@ -24,4 +25,5 @@ function amountToKill(weight){ // creates a function the receives weight
 }
 
 weight = prompt("What does the animal in question weigh?"); // prompts the user for the amount the animal weighs
+weight = Number(weight); // casts weight to a number
 console.log("It will take a total of " + amountToKill(weight) + " stings to kill an animal weighing " + weight + " pounds"); // prints out the amount of stings it requires to kill an animal weighing "X" amount of pounds
