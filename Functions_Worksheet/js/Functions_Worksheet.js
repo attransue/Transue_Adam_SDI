@@ -11,7 +11,7 @@ function calcCirCircumference(){ // creates a function that takes one argument (
      var circumference = 2 * pi *radius; // does the math for the circumference of a circle
     return circumference; // returns the value of the math above
 }
-console.log(calcCirCircumference()); // prints out the value of the function
+console.log("The Circumference of a the circle is " + calcCirCircumference()); // prints out the value of the function
 
 
 
