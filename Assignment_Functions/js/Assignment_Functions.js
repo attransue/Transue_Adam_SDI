@@ -48,18 +48,18 @@ function userChoice(userInput){// creates a function for the verafication of the
     return userInput;
 }
 
-var pOrF = userChoice(choice);
-floridaLotterNumbers = flLotteryDraw(35, 1);
+var pOrF = userChoice(choice); // creates a new variable for the results of the userChoice function
+floridaLotterNumbers = flLotteryDraw(35, 1);// assigns the value of the florida lottery function to the floridaLotterNumbers var
 
-if (pOrF ==="Powerball" || pOrF === "powerball" || pOrF ===  "Power ball" || pOrF ===  "power ball" || pOrF ===  "Power Ball") { // conditional to check if any one of several forms of power ball are input and then spits out the powerball numbers
+if (pOrF ==="Powerball" || pOrF === "powerball" || pOrF ===  "Power ball" || pOrF ===  "power ball" || pOrF ===  "Power Ball") { // conditional to check if any one of several forms of "power ball" are input and then spits out the powerball numbers
     powerBallNumbers = powerBallDraw(59, 1); // assigns the value of the power ball function to the powerBallNumbers var
     powPlay = powerPlayNumber();// assigns the value of the power play function to the powPlay var
     console.log("Your Powerball Numbers are" + powerBallNumbers); // prints the results of power ball numbers
     console.log("And Your Powerplay number is " + powPlay); // prints the results of the power play number
-} else if (pOrF === "Florida Lottery" || pOrF ===  "florida lottery" || pOrF ===  "Florida" || pOrF ===  "lottery" || pOrF ===  "Lottery") {
-    console.log("The Lottery Numbers For the State of Florida are " + floridaLotterNumbers);
-} else {
-    alert("That is not a valid string please reload the page and try again!!!")
+} else if (pOrF === "Florida Lottery" || pOrF ===  "florida lottery" || pOrF ===  "Florida" || pOrF ===  "lottery" || pOrF ===  "Lottery") { // conditional to check if any one of several forms of "Floirda Lottery" are input and then spits out the Florida Lottery numbers
+    console.log("The Lottery Numbers For the State of Florida are " + floridaLotterNumbers); // prints the variable for florida state lottery numbers
+} else { // for every thing else
+    alert("That is not a valid string please reload the page and try again!!!") // instructs the user to try again by reloading the page
 }
 
 
