@@ -45,7 +45,7 @@ function userChoice(userInput){// creates a function for the verafication of the
         userInput = prompt("Please Enter a Valid Choice, Either the Powerball or the Florida Lottery!"); // if there is an empty input promts for another input
 
     }
-    return userInput;
+    return userInput; // returns the user input
 }
 
 var pOrF = userChoice(choice); // creates a new variable for the results of the userChoice function
