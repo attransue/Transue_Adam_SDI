@@ -5,12 +5,14 @@
  **/
 
 // Variable assignment
+
+
 var powerBallNumbers;
 var floridaLotterNumbers;
 var powPlay;
-var pAssignment = [];
-var fAssignment = []; // creates an array for the fl lottery assignment
 var choice = prompt("Would you like to view the Powerball Numbers or Florida State Lottery Numbers?"); // variable to recieve the users input
+
+
 // functions creation
 
 function powerBallDraw(max, min){ // creates a function that recieves the high and low values required for the random number gen
@@ -47,6 +49,9 @@ function userChoice(userInput){// creates a function for the verafication of the
     }
     return userInput; // returns the user input
 }
+
+// outputs for the lottery numbers
+
 
 var pOrF = userChoice(choice); // creates a new variable for the results of the userChoice function
 floridaLotterNumbers = flLotteryDraw(35, 1);// assigns the value of the florida lottery function to the floridaLotterNumbers var
